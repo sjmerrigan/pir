@@ -17,7 +17,3 @@ function exit(err) {
   process.exit();
 }
 process.on('SIGINT', exit);
-
-// #A Initialize GPIO17(11) in input mode, 'both' means we want to handle both rising and falling interrupt edges
-// #B Listen for state changes on GPIO17(11), if a change is detected the anonymous callback function will be called with the new value
-// #C Write to GPIO4(7) with the PIR state
